@@ -3,6 +3,19 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 apply plugin: 'com.android.application'
 apply plugin: 'org.jetbrains.kotlin.android'
 
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withInputStream { localProperties.load(it) }
+}
+
+def releaseStoreFile = localProperties.getProperty('release.storeFile')
+def releaseStorePassword = localProperties.getProperty('release.storePassword')
+def releaseKeyAlias = localProperties.getProperty('release.keyAlias')
+def releaseKeyPassword = localProperties.getProperty('release.keyPassword')
+def hasReleaseSigning = [releaseStoreFile, releaseStorePassword, releaseKeyAlias, releaseKeyPassword]
+        .every { it != null && !it.trim().isEmpty() }
+
 android {
     namespace 'com.june.activitymonitor'
     compileSdk 35
@@ -12,10 +25,21 @@ android {
         minSdk 30
         targetSdk 35
         versionCode 1
-        versionName "1.0"
+        versionName "0.0.1"
 
         vectorDrawables {
             useSupportLibrary true
+        }
+    }
+
+    signingConfigs {
+        if (hasReleaseSigning) {
+            release {
+                storeFile file(releaseStoreFile)
+                storePassword releaseStorePassword
+                keyAlias releaseKeyAlias
+                keyPassword releaseKeyPassword
+            }
         }
     }
 
@@ -23,6 +47,9 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            if (hasReleaseSigning) {
+                signingConfig signingConfigs.release
+            }
         }
     }
 
