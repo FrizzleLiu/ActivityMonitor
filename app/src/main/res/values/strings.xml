@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Activity Monitor</string>
+
+    <string name="tab_system">System &amp; Services</string>
+    <string name="tab_user">User Apps</string>
+
+    <string name="menu_sort">Sort by</string>
+    <string name="sort_cpu">CPU usage</string>
+    <string name="sort_memory">Memory usage</string>
+    <string name="sort_name">App name</string>
+    <string name="menu_refresh">Refresh</string>
+    <string name="menu_summary">Overview</string>
+    <string name="menu_language">Language</string>
+    <string name="menu_usage_access">Grant usage access</string>
+    <string name="menu_helper">Start privileged helper</string>
+    <string name="menu_appearance">Appearance</string>
+    <string name="appearance_system">Follow system</string>
+    <string name="appearance_light">Light mode</string>
+    <string name="appearance_dark">Dark mode</string>
+    <string name="language_system">Follow system</string>
+    <string name="language_chinese">简体中文</string>
+    <string name="language_english">English</string>
+
+    <string name="label_cpu">CPU</string>
+    <string name="label_memory">Memory</string>
+    <string name="label_temperature">Temperature</string>
+    <string name="label_services">Services</string>
+    <string name="label_processes">Processes</string>
+    <string name="summary_cpu">CPU %1$s</string>
+    <string name="summary_memory">MEM %1$s</string>
+    <string name="summary_services">%1$d services</string>
+    <string name="value_unknown">—</string>
+    <string name="status_running">Running</string>
+    <string name="status_stopped">Stopped</string>
+    <string name="status_frozen">Frozen</string>
+    <string name="status_disabled">Disabled</string>
+
+    <string name="action_end">End</string>
+
+    <string name="control_freeze">Freeze (block auto-start)</string>
+    <string name="control_freeze_hint">Temporarily suspends the app and stops its current process, blocking auto-start and background activity. It remains installed and can be restored at any time.</string>
+    <string name="control_disable">Disable app</string>
+    <string name="control_disable_hint">Disables the app more thoroughly. Its services and UI become unavailable and the launcher icon usually disappears. App data normally remains, but it cannot be used until restored.</string>
+    <string name="control_restore">Restore</string>
+    <string name="control_restore_hint">Undo the frozen or disabled state and make the app available again.</string>
+    <string name="control_freeze_done">Froze %1$s</string>
+    <string name="control_disable_done">Disabled %1$s</string>
+    <string name="control_restore_done">Restored %1$s</string>
+    <string name="control_failed">Could not change %1$s</string>
+    <string name="control_need_helper">Start the privileged helper first (long press needs shell privilege).</string>
+    <string name="control_system_not_supported">System apps and services cannot be frozen or disabled</string>
+
+    <string name="empty_list">No running apps or services.\nPull down to refresh.</string>
+    <string name="loading">Scanning…</string>
+    <string name="summary">CPU %1$s · MEM %2$s · %3$s · %4$s</string>
+    <string name="summary_temperature">TEMP %1$s</string>
+    <string name="tab_title_count">%1$s (%2$d)</string>
+    <string name="overview_battery">Battery temperature</string>
+    <string name="overview_soc">SoC temperature</string>
+    <string name="root_available">Root available</string>
+    <string name="usage_access_available">Usage access</string>
+    <string name="root_unavailable">No root, detection limited</string>
+    <string name="helper_available">Privileged helper ready</string>
+    <string name="helper_unavailable">Helper not running</string>
+    <string name="helper_banner_title">Privileged helper is off — features are limited</string>
+    <string name="helper_banner_message">Start the privileged helper for full functionality: exact CPU / memory data and the ability to end any app.</string>
+    <string name="helper_banner_action">Start now</string>
+    <string name="refreshed_at">Updated %1$s</string>
+
+    <string name="helper_guide_title">Start privileged helper</string>
+    <string name="helper_guide_message">Full CPU/memory data and ending any app need the built-in helper, which runs with the same privilege as an adb shell — no root, no second app required.\n\n• "Pair without a computer" opens the phone\'s Wireless debugging and posts a pairing notification. Tap "Pair device with pairing code", then enter the port and code from the notification shade.\n\n• Or copy the command below and run it once from a computer.\n\nThe helper keeps running until the next reboot.</string>
+    <string name="helper_wireless_start">Pair without a computer</string>
+    <string name="helper_copy_command">Copy PC command</string>
+    <string name="helper_copied">Command copied — paste it into a computer terminal with the device connected.</string>
+    <string name="helper_check_again">Check again</string>
+    <string name="helper_ready_toast">Privileged helper is running</string>
+    <string name="helper_connecting">Connecting to Wireless debugging…</string>
+    <string name="helper_starting">Starting privileged helper…</string>
+    <string name="helper_start_failed">The helper did not start. Make sure Wireless debugging is on, then try again.</string>
+
+    <string name="pair_notification_channel_name">Wireless pairing</string>
+    <string name="pair_notification_channel_description">Enter the pairing port and 6-digit code from the notification shade</string>
+    <string name="pair_notification_title">Wireless pairing</string>
+    <string name="pair_notification_waiting_fields">Open Developer options → Wireless debugging → Pair device with pairing code, then enter the port and 6-digit code here.</string>
+    <string name="pair_notification_port_ready">Port %1$s is set. Enter the 6-digit pairing code.</string>
+    <string name="pair_notification_code_ready">The pairing code is set. Enter the pairing port.</string>
+    <string name="pair_notification_both_ready">Port and code are ready. Starting pairing…</string>
+    <string name="pair_notification_action_port">Enter port</string>
+    <string name="pair_notification_action_code">Enter code</string>
+    <string name="pair_notification_action_change_port">Change port</string>
+    <string name="pair_notification_action_change_code">Change code</string>
+    <string name="pair_notification_action_open_wireless">Open Wireless debugging</string>
+    <string name="pair_notification_pairing">Pairing through native adb…</string>
+    <string name="pair_notification_success_title">Wireless pairing complete</string>
+    <string name="pair_notification_success">Privileged helper started.</string>
+    <string name="pair_notification_pair_failed_title">Pairing failed</string>
+    <string name="pair_notification_pair_failed">The pairing code is invalid or expired. Generate a new code and enter it again.</string>
+    <string name="pair_notification_connect_failed_title">Could not connect to Wireless debugging</string>
+    <string name="pair_notification_connect_failed">Pairing completed, but the connection is not ready. Make sure Wireless debugging is still on, then retry.</string>
+    <string name="pair_notification_reenter">Enter again</string>
+    <string name="pair_notification_retry_connect">Retry connection</string>
+    <string name="pair_notification_posted">Pairing notification posted. Open the notification shade to enter the port and code.</string>
+    <string name="pair_notification_permission_denied">Notification permission is required to enter the port and pairing code</string>
+    <string name="pair_notification_connect_port_title">Wireless debugging port needed</string>
+    <string name="pair_notification_connect_port_needed">Pairing is complete. Read the port after the colon under “IP address &amp; port” in Wireless debugging, then enter it here. You can also turn Wireless debugging off and on so the app can receive it automatically.</string>
+    <string name="pair_notification_connect_port_retry">Port %1$d did not connect. Open Wireless debugging and enter the port shown under “IP address &amp; port”, or turn it off and on to refresh automatically.</string>
+    <string name="pair_notification_action_connect_port">Enter connect port</string>
+
+    <string name="pair_developer_options_required_title">Enable Developer options first</string>
+    <string name="pair_developer_options_required_steps">Developer options are off.\n\n1. Open Settings → About phone (on some brands it is under System).\n2. Tap Build number seven times until Developer mode is enabled.\n3. Go back to Settings → System → Developer options.\n\nReturn to this app and try wireless pairing again.</string>
+    <string name="pair_wireless_debugging_required_title">Enable Wireless debugging first</string>
+    <string name="pair_wireless_debugging_required_steps">Wireless debugging is off.\n\n1. Open Settings → System → Developer options.\n2. Turn on Wireless debugging.\n3. Return to this app and try wireless pairing again.</string>
+    <string name="pair_wireless_not_supported_title">Wireless debugging is not supported</string>
+    <string name="pair_wireless_not_supported_message">This device has no Wireless debugging entry in system Settings, so “Pair without a computer” cannot be used. Some manufacturers remove this feature even on Android 11 or later.\n\nYou can still start the privileged helper with a one-time ADB command from a computer:\n1. Connect the phone by USB and allow USB debugging.\n2. Copy the computer command and run it in a terminal.\n3. Return to the app and tap “Check again”.</string>
+    <string name="pair_open_device_info">Open About phone</string>
+    <string name="pair_open_developer_options">Open Developer options</string>
+    <string name="pair_wireless_settings_fallback">Wireless debugging screen not found; opened Developer options</string>
+    <string name="pair_open_settings_failed">No system settings screen is available on this device</string>
+    <string name="pair_port_invalid">Enter the pairing port shown in the Wireless debugging dialog</string>
+    <string name="pair_code_invalid">Enter the 6-digit code shown on screen</string>
+    <string name="pair_success">Helper started.</string>
+
+    <string name="kill_system_title">Dangerous operation</string>
+    <string name="kill_system_message">"%1$s" is a system app or service. Ending it may cause system instability, app crashes, data loss, or other unpredictable issues. Continue?</string>
+    <string name="kill_user_title">Confirm</string>
+    <string name="kill_user_message">End "%1$s" now?</string>
+    <string name="kill_confirm">Continue</string>
+    <string name="kill_cancel">Cancel</string>
+    <string name="kill_done">Ended %1$s</string>
+    <string name="kill_failed">Could not end %1$s</string>
+    <string name="kill_best_effort">Requested to end %1$s. Without root the system may ignore it — use "App info" to force stop.</string>
+    <string name="kill_open_settings">App info</string>
+    <string name="kill_open_settings_failed">No system settings screen available on this device</string>
+    <string name="kill_self_blocked">You cannot end Activity Monitor itself</string>
+
+    <string name="cd_app_icon">App icon</string>
+    <string name="cd_end_app">End this app</string>
+    <string name="cd_manage_app">Manage this app</string>
+
+    <string name="empty_need_usage_access">Detecting running apps needs the "Usage access" permission.\nTap here to grant it, then pull to refresh.</string>
+    <string name="empty_need_helper">Full CPU/memory data and ending apps need the built-in helper.\nTap here for the one-time adb command, then pull to refresh.</string>
+</resources>

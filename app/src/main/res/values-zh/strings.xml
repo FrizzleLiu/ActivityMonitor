@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">活动监视器</string>
+
+    <string name="tab_system">系统应用与服务</string>
+    <string name="tab_user">用户应用</string>
+
+    <string name="menu_sort">排序方式</string>
+    <string name="sort_cpu">按 CPU 占用</string>
+    <string name="sort_memory">按内存占用</string>
+    <string name="sort_name">按应用名称</string>
+    <string name="menu_refresh">刷新</string>
+    <string name="menu_summary">概览</string>
+    <string name="menu_language">语言</string>
+    <string name="menu_appearance">页面模式</string>
+    <string name="menu_usage_access">授予使用情况访问权限</string>
+    <string name="menu_helper">启动特权服务</string>
+    <string name="appearance_system">跟随系统</string>
+    <string name="appearance_light">浅色模式</string>
+    <string name="appearance_dark">深色模式</string>
+    <string name="language_system">跟随系统</string>
+    <string name="language_chinese">简体中文</string>
+    <string name="language_english">English</string>
+
+    <string name="label_cpu">CPU</string>
+    <string name="label_memory">内存</string>
+    <string name="label_temperature">温度</string>
+    <string name="label_services">服务</string>
+    <string name="label_processes">进程</string>
+    <string name="summary_cpu">CPU %1$s</string>
+    <string name="summary_memory">内存 %1$s</string>
+    <string name="summary_services">%1$d 个服务</string>
+    <string name="value_unknown">—</string>
+    <string name="status_running">运行中</string>
+    <string name="status_stopped">已停止</string>
+    <string name="status_frozen">已冻结</string>
+    <string name="status_disabled">已禁用</string>
+
+    <string name="action_end">结束</string>
+
+    <string name="control_freeze">冻结（禁止自启）</string>
+    <string name="control_freeze_hint">临时暂停应用并结束当前进程，阻止自启动和后台运行；应用仍保持安装，可随时恢复。</string>
+    <string name="control_disable">禁用应用</string>
+    <string name="control_disable_hint">彻底停用应用，服务和界面不可用，桌面图标通常会消失；应用与数据一般仍在，恢复前无法使用。</string>
+    <string name="control_restore">恢复</string>
+    <string name="control_restore_hint">撤销冻结或禁用状态，让应用重新可用。</string>
+    <string name="control_freeze_done">已冻结 %1$s</string>
+    <string name="control_disable_done">已禁用 %1$s</string>
+    <string name="control_restore_done">已恢复 %1$s</string>
+    <string name="control_failed">操作失败：%1$s</string>
+    <string name="control_need_helper">请先启动特权服务（长按操作需要 shell 权限）。</string>
+    <string name="control_system_not_supported">系统应用与服务不支持冻结或禁用</string>
+
+    <string name="empty_list">暂无正在运行的应用或服务。\n下拉可刷新。</string>
+    <string name="loading">正在扫描…</string>
+    <string name="summary">CPU %1$s · 内存 %2$s · %3$s · %4$s</string>
+    <string name="summary_temperature">温度 %1$s</string>
+    <string name="tab_title_count">%1$s (%2$d)</string>
+    <string name="overview_battery">电池温度</string>
+    <string name="overview_soc">处理器温度</string>
+    <string name="root_available">已获取 Root</string>
+    <string name="usage_access_available">使用情况访问</string>
+    <string name="root_unavailable">未 Root，检测受限</string>
+    <string name="helper_available">特权服务已就绪</string>
+    <string name="helper_unavailable">未启动特权服务</string>
+    <string name="helper_banner_title">特权服务未启动，功能受限</string>
+    <string name="helper_banner_message">开启特权服务后才能使用完整功能：精确查看 CPU / 内存并结束任意应用。</string>
+    <string name="helper_banner_action">立即开启</string>
+    <string name="empty_need_usage_access">检测“正在运行”需要“使用情况访问权限”。\n点击此处授权后下拉刷新。</string>
+    <string name="refreshed_at">更新于 %1$s</string>
+
+    <string name="helper_guide_title">启动特权服务</string>
+    <string name="helper_guide_message">查看完整 CPU / 内存数据与结束任意应用，需要内置特权服务，它以与 adb shell 相同的身份运行——无需 Root，也无需第二个应用。\n\n• “无线配对（无电脑）”会打开手机自带的“无线调试”并发布配对通知。点按“使用配对码配对设备”后，下拉通知栏填写端口和配对码即可。\n\n• 也可以复制下面的命令，在电脑上执行一次。\n\n服务会一直运行到下次重启。</string>
+    <string name="helper_wireless_start">无线配对（无电脑）</string>
+    <string name="helper_copy_command">复制电脑命令</string>
+    <string name="helper_copied">命令已复制，请在已连接设备的电脑终端中粘贴执行。</string>
+    <string name="helper_check_again">重新检测</string>
+    <string name="helper_ready_toast">特权服务正在运行</string>
+    <string name="helper_connecting">正在连接无线调试…</string>
+    <string name="helper_starting">正在启动特权服务…</string>
+    <string name="helper_start_failed">特权服务未能启动。请确认“无线调试”已打开后重试。</string>
+
+    <string name="pair_notification_channel_name">无线调试配对</string>
+    <string name="pair_notification_channel_description">在通知栏输入配对端口和 6 位配对码</string>
+    <string name="pair_notification_title">无线调试配对</string>
+    <string name="pair_notification_waiting_fields">打开开发者选项 → 无线调试 → 使用配对码配对设备，然后在这里输入端口和 6 位配对码。</string>
+    <string name="pair_notification_port_ready">端口 %1$s 已填写，请再输入 6 位配对码。</string>
+    <string name="pair_notification_code_ready">配对码已填写，请再输入配对端口。</string>
+    <string name="pair_notification_both_ready">端口和配对码已齐全，正在开始配对…</string>
+    <string name="pair_notification_action_port">输入端口</string>
+    <string name="pair_notification_action_code">输入配对码</string>
+    <string name="pair_notification_action_change_port">修改端口</string>
+    <string name="pair_notification_action_change_code">修改配对码</string>
+    <string name="pair_notification_action_open_wireless">打开无线调试</string>
+    <string name="pair_notification_pairing">正在通过原生 adb 配对…</string>
+    <string name="pair_notification_success_title">无线配对完成</string>
+    <string name="pair_notification_success">特权服务已启动。</string>
+    <string name="pair_notification_pair_failed_title">配对失败</string>
+    <string name="pair_notification_pair_failed">配对码无效或已过期，请重新生成配对码后填写。</string>
+    <string name="pair_notification_connect_failed_title">连接无线调试失败</string>
+    <string name="pair_notification_connect_failed">配对已完成，但暂时未连上。请确认无线调试仍开启后重试连接。</string>
+    <string name="pair_notification_reenter">重新填写</string>
+    <string name="pair_notification_retry_connect">重试连接</string>
+    <string name="pair_notification_posted">已发送配对通知，请下拉通知栏填写端口和配对码</string>
+    <string name="pair_notification_permission_denied">需要通知权限才能在通知栏输入端口和配对码</string>
+    <string name="pair_notification_connect_port_title">需要无线调试连接端口</string>
+    <string name="pair_notification_connect_port_needed">配对已完成。请在“无线调试”页面的“IP 地址和端口”中，填写冒号后的连接端口。也可以关闭再开启一次无线调试，应用会自动获取。</string>
+    <string name="pair_notification_connect_port_retry">端口 %1$d 未能连接。请打开无线调试，填写“IP 地址和端口”中冒号后的连接端口；或关闭再开启无线调试以自动刷新。</string>
+    <string name="pair_notification_action_connect_port">填写连接端口</string>
+
+    <string name="pair_developer_options_required_title">请先开启开发者选项</string>
+    <string name="pair_developer_options_required_steps">开发者选项尚未开启。\n\n1. 打开“设置” → “关于手机”（部分品牌位于“系统”中）。\n2. 连续点击“版本号” 7 次，直到提示“开发者模式已开启”。\n3. 返回“设置” → “系统” → “开发者选项”。\n\n完成后再返回本应用重新进行无线配对。</string>
+    <string name="pair_wireless_debugging_required_title">请先开启无线调试</string>
+    <string name="pair_wireless_debugging_required_steps">无线调试尚未开启。\n\n1. 进入“设置” → “系统” → “开发者选项”。\n2. 打开“无线调试”。\n3. 返回本应用重新进行无线配对。</string>
+    <string name="pair_wireless_not_supported_title">此设备不支持无线调试</string>
+    <string name="pair_wireless_not_supported_message">系统设置中没有“无线调试”入口，因此无法使用“无线配对（无电脑）”。部分厂商会移除该功能，即使系统版本为 Android 11 或更高。\n\n你仍可通过电脑执行一次 ADB 命令启动特权服务：\n1. 用 USB 连接电脑，并在手机上允许 USB 调试。\n2. 复制电脑命令，在电脑终端中执行。\n3. 返回应用并点击“重新检测”。</string>
+    <string name="pair_open_device_info">前往关于手机</string>
+    <string name="pair_open_developer_options">前往开发者选项</string>
+    <string name="pair_wireless_settings_fallback">未找到无线调试页面，已打开开发者选项</string>
+    <string name="pair_open_settings_failed">当前设备没有可用的系统设置页面</string>
+    <string name="pair_port_invalid">请输入无线调试弹窗中显示的配对端口</string>
+    <string name="pair_code_invalid">请输入屏幕上显示的 6 位配对码</string>
+    <string name="pair_success">特权服务已启动。</string>
+
+    <string name="kill_system_title">危险操作</string>
+    <string name="kill_system_message">“%1$s”是系统应用或服务。结束它可能导致系统不稳定、应用崩溃、数据丢失等不可预知的风险。是否继续？</string>
+    <string name="kill_user_title">确认操作</string>
+    <string name="kill_user_message">确定要结束“%1$s”吗？</string>
+    <string name="kill_confirm">继续</string>
+    <string name="kill_cancel">取消</string>
+    <string name="kill_done">已结束 %1$s</string>
+    <string name="kill_failed">无法结束 %1$s</string>
+    <string name="kill_best_effort">已请求结束 %1$s。未 Root 时系统可能忽略，可在「应用详情」中强行停止。</string>
+    <string name="kill_open_settings">应用详情</string>
+    <string name="kill_open_settings_failed">当前设备没有可用的系统设置页面</string>
+    <string name="kill_self_blocked">不能结束“活动监视器”自身</string>
+
+    <string name="cd_app_icon">应用图标</string>
+    <string name="cd_end_app">结束此应用</string>
+    <string name="cd_manage_app">管理此应用</string>
+    <string name="empty_need_helper">查看完整 CPU / 内存数据与结束应用需要内置特权服务。\n点击此处获取一次性 adb 命令，然后下拉刷新。</string>
+</resources>

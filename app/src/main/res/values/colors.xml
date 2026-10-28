@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ic_launcher_background">#0B5FFF</color>
+    <color name="status_running">#2E7D32</color>
+    <color name="status_stopped">#9E9E9E</color>
+    <color name="danger">#D32F2F</color>
+    <!-- Resource usage levels: <60% green, 60-80% amber, >=80% red. -->
+    <color name="level_low">#2E7D32</color>
+    <color name="level_mid">#F9A825</color>
+    <color name="level_high">#D32F2F</color>
+</resources>
